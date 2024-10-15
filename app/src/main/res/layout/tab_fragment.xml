@@ -8,70 +8,35 @@
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="2000dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <com.google.android.material.slider.Slider
-                    android:id="@+id/slider1"
-                    android:valueFrom="0"
-                    android:valueTo="10"
-                    android:stepSize="1"
-                    android:layout_width="300dp"
-                    android:layout_height="?attr/dropdownListPreferredItemHeight"
-                    android:layout_marginTop="100dp"
-                    app:labelBehavior="visible"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.slider.Slider
+                        android:id="@+id/slider1"
+                        android:valueFrom="0"
+                        android:valueTo="10"
+                        android:stepSize="1"
+                        android:layout_width="300dp"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        android:layout_marginTop="200dp"
+                        app:labelBehavior="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.slider.Slider
-                    android:id="@+id/slider2"
-                    android:valueFrom="0"
-                    android:valueTo="10"
-                    android:stepSize="1"
-                    android:layout_width="300dp"
-                    android:layout_height="?attr/dropdownListPreferredItemHeight"
-                    android:layout_marginTop="300dp"
-                    app:labelBehavior="visible"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/slider1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.google.android.material.slider.Slider
-                    android:id="@+id/slider3"
-                    android:valueFrom="0"
-                    android:valueTo="10"
-                    android:stepSize="1"
-                    android:layout_width="300dp"
-                    android:layout_height="?attr/dropdownListPreferredItemHeight"
-                    android:layout_marginTop="300dp"
-                    app:labelBehavior="visible"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/slider2" />
-
-            <com.google.android.material.slider.Slider
-                    android:id="@+id/slider4"
-                    android:valueFrom="0"
-                    android:valueTo="10"
-                    android:stepSize="1"
-                    android:layout_width="300dp"
-                    android:layout_height="?attr/dropdownListPreferredItemHeight"
-                    android:layout_marginTop="300dp"
-                    app:labelBehavior="visible"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/slider3" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="3000dp"/>
 
         </LinearLayout>
 
