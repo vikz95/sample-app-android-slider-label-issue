@@ -1,27 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:tools="http://schemas.android.com/tools"
         tools:context=".TabFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-        <com.google.android.material.slider.Slider
-                android:id="@+id/max_retries_slider"
-                android:valueFrom="0"
-                android:valueTo="10"
-                android:stepSize="1"
-                android:layout_width="300dp"
-                android:layout_height="?attr/dropdownListPreferredItemHeight"
-                android:layout_margin="16dp"
-                app:labelBehavior="visible"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="2000dp">
+
+            <com.google.android.material.slider.Slider
+                    android:id="@+id/slider1"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:stepSize="1"
+                    android:layout_width="300dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="100dp"
+                    app:labelBehavior="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.Slider
+                    android:id="@+id/slider2"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:stepSize="1"
+                    android:layout_width="300dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="300dp"
+                    app:labelBehavior="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/slider1" />
+
+            <com.google.android.material.slider.Slider
+                    android:id="@+id/slider3"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:stepSize="1"
+                    android:layout_width="300dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="300dp"
+                    app:labelBehavior="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/slider2" />
+
+            <com.google.android.material.slider.Slider
+                    android:id="@+id/slider4"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:stepSize="1"
+                    android:layout_width="300dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="300dp"
+                    app:labelBehavior="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/slider3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
